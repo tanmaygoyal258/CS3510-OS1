@@ -159,10 +159,10 @@ void* thread_check_perfect_number(void* arr){
                 else fprintf(f , "%d: Not a perfect number\n",num);
             }
         }
-        // closing the file
-        fclose(f);
+    // closing the file
+    fclose(f);
 
-        return NULL;
+    return NULL;
 }
 
 
