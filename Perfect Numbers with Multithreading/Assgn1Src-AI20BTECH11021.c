@@ -134,7 +134,7 @@ void* thread_check_perfect_number(void* arr){
 
     for(int i = 0 ; i < columns ; i++)
         {
-            if (i == 1) continue;
+            if (i == 1) continue;   // because the second element is number of columns
 
             int num = array[i];
 
