@@ -65,13 +65,13 @@ int main()
     // declaring array for thread-ids
     pthread_t t_id[K];
 
-    // creating k threads
-    for (int t = 0 ; t < K ; t++){
+    
+    for (int t = 0 ; t < K ; t++)
         pthread_create(&t_id[t] , NULL , thread_check_perfect_number , division[t]);
-        
-        // waiting for termination of all threads
+
+     for (int t = 0 ; t < K ; t++)
         pthread_join(t_id[t] , NULL);
-    }
+
 
     // opening the parent output file
     char* filename = "OutMain.txt";
